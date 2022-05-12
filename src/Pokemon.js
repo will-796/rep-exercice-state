@@ -1,8 +1,10 @@
 import React from 'react';
+import { pokemonType } from './types';
 
 class Pokemon extends React.Component {
   render() {
-    const { name, type, averageWeight, image } = this.props.pokemon;
+    const { pokemon } = this.props;
+    const { name, type, averageWeight, image } = pokemon;
 
     return (
       <div className="pokemon">
@@ -27,5 +29,9 @@ class Pokemon extends React.Component {
     );
   }
 }
+
+Pokemon.propTypes = {
+  pokemon: pokemonType.isRequired,
+};
 
 export default Pokemon;
