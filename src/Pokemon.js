@@ -10,14 +10,10 @@ class Pokemon extends React.Component {
       <div className="pokemon">
         <div>
           <p>
-            {' '}
             {name}
-            {' '}
           </p>
           <p>
-            {' '}
             {type}
-            {' '}
           </p>
           <p>
             {' '}
